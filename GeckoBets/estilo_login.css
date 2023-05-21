@@ -1,0 +1,57 @@
+body {
+
+    min-width: 800px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.LT {
+    float: left;
+    justify-content: center;
+    width: 400px;
+    height: 450px;
+    background-image: linear-gradient(to bottom, #35e01e, #139853, #134d83);
+    border-radius: 10px;
+margin-top: 100px;
+}
+
+.LT p {
+    text-align: center;
+}
+
+.log {
+    background-image: linear-gradient(to bottom, #27ecb1, #57e29a, #bfe9bb);
+
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    padding: auto;
+
+}
+
+.log input {
+    border-radius: 10px;
+
+}
+
+.log button {
+    margin-top: 30px;
+    background-color: antiquewhite;
+    border: 0;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.log button:hover {
+    background-color: rgb(238, 201, 153);
+
+
+}
