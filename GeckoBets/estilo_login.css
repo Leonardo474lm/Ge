@@ -12,7 +12,7 @@ body {
     justify-content: center;
     width: 400px;
     height: 450px;
-    background-image: linear-gradient(to bottom, #35e01e, #139853, #134d83);
+    background-image: linear-gradient(to bottom, #1ea9e0, #132b98, #134d83);
     border-radius: 10px;
 margin-top: 100px;
 }
@@ -22,7 +22,7 @@ margin-top: 100px;
 }
 
 .log {
-    background-image: linear-gradient(to bottom, #27ecb1, #57e29a, #bfe9bb);
+    background-image: linear-gradient(to bottom, #27a4ec, #8857e2, #bfe9bb);
 
     float: left;
     margin-top: 10px;
@@ -54,4 +54,9 @@ margin-top: 100px;
     background-color: rgb(238, 201, 153);
 
 
+}
+body{
+    background-image: url('images/messi.avif');
+    background-size: cover;
+    background-position: center;
 }
