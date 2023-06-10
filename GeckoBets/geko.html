@@ -29,18 +29,37 @@
         </div>
 
         <div class="tooltop">
-            <button><i class="fas fa-bars menu-icon"></i></button>
-            <a href="login.html"> <button> <i class="fas fa-user"></i> ingresar</button></a>
-            <button><i class="fas fa-search lupa-icon"></i></button>
 
-
+            <div>
+                <a href="login.html"> <button> <i class="fas fa-user"></i> ingresar</button></a>
+            </div>
+            <div>
+                <button><i class="fas fa-search lupa-icon"></i></button>
+            </div>
+            <div class="displaymenu">
+                <button><i class="fas fa-bars menu-icon"></i></button>
+                <div class="displaymenu-content">
+                    <a href="">Cuenta</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </div>
         </div>
         <div class="toolboot">
-            <a href=""><li><i class="fas fa-star"></i> favoritos</li></a>
-            <a href=""><li><i class="fas fa-futbol"></i> futbol</li></a>
-            <a href=""><li><i class="fas fa-basketball-ball"></i> baloncesto</li></a>
-            <a href=""><li><i class="fas fa-table-tennis"></i> tenis</li></a>
-            <a href=""><li><i class="fas fa-baseball-ball"></i> beisbol</li></a>
+            <a href="">
+                <li><i class="fas fa-star"></i> favoritos</li>
+            </a>
+            <a href="">
+                <li><i class="fas fa-futbol"></i> futbol</li>
+            </a>
+            <a href="">
+                <li><i class="fas fa-basketball-ball"></i> baloncesto</li>
+            </a>
+            <a href="">
+                <li><i class="fas fa-table-tennis"></i> tenis</li>
+            </a>
+            <a href="">
+                <li><i class="fas fa-baseball-ball"></i> beisbol</li>
+            </a>
 
         </div>
 
@@ -202,20 +221,40 @@
     </div>
     <div class="footer">
         <div class="partes">
+            <script>
+                var links = document.querySelectorAll('.link');
+                var contents = document.querySelectorAll('.content');
+        
+                links.forEach(function (link) {
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        var target = this.getAttribute('data-target');
+        
+                        contents.forEach(function (content) {
+                            if (content.id === target) {
+                                content.style.display = 'block';
+                            } else {
+                                content.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            </script>
+        
             <h2>GeckoBets</h2>
-            <a href="">
+            <a href="AboutApp.html" class="link" data-target="content1">
                 <p>Acerca de GeckoBets</p>
             </a>
-            <a href="">
+            <a href="AboutApp.html" class="link" data-target="content2">
                 <p>Apuesta responsable</p>
             </a>
-            <a href="">
+            <a href="AboutApp.html" class="link" data-target="content3">
                 <p>Nuestras apuestas</p>
             </a>
-            <a href="">
+            <a href="AboutApp.html" class="link" data-target="content4">
                 <p>Politica de Cookies</p>
             </a>
-            <a href="">
+            <a href="AboutApp.html" class="link" data-target="content5">
 
                 <p>Politica de privacidad</p>
             </a>
@@ -256,13 +295,15 @@
         </div>
         <div class="partes">
             <h2>Siguenos</h2>
-            <img src="images/instagram.webp" alt="">
-            <img src="images/facebook.webp" alt="">
-            <img src="images/whatsapp.png" alt="">
-            <img src="images/tiktok.webp" alt="">
-            <img src="images/telegram.png" alt="">
+            <a href=""><img src="images/instagram.webp" alt=""></a>
+            <a href="https://web.facebook.com/profile.php?id=100017644566597"><img src="images/facebook.webp"
+                    alt=""></a>
+            <a href=""><img src="images/whatsapp.png" alt=""></a>
+            <a href=""><img src="images/tiktok.webp" alt=""></a>
+            <a href=""><img src="images/telegram.png" alt=""></a>
         </div>
     </div>
+    <button id="prueba1">activation boton</button>
 </body>
 
 </html>

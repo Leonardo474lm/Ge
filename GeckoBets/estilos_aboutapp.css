@@ -1,0 +1,8 @@
+body{
+    background-image: url('images/mesi.webp');
+    background-size: cover;
+    
+}
+.content {
+    display: none;
+  }

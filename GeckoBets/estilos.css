@@ -58,14 +58,29 @@ text-align: center;
 
 }
 
-.nav .tooltop {
+.nav .tooltop{
 
-    width: 23%;
+    width: 19%;
     height: 100px;
     float: right;
-    
+    /* background-color: #00A4BD; */
+
 }
 
+.nav .tooltop div{
+
+   margin-right: 0px;
+float: left;
+    
+    /*background-color: #139853;*/
+}
+.nav .tooltop .displaymenu {
+
+    margin-right: 0px;
+     float: right;
+     
+     /* background-color: #9bb1a6; */
+ }
 .nav .tooltop button {
     float: right;
     text-align: center;
@@ -306,3 +321,37 @@ background-color: transparent;
     background-size: cover;
     background-position: center;
 }
+/* agregado recientement"*/
+
+  /* esta parte es de el menu despelglable*/
+  .displaymenu{
+    
+    
+    float: right;
+
+  }
+  .displaymenu-content{
+    display: none;
+    position: absolute;
+    width: 6%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px  rgba(0,0,0,2);
+   
+  }
+  .displaymenu:hover .displaymenu-content{
+    display: block;
+    margin-top: 40px;
+  }
+  .displaymenu-content a{
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 0px;
+  }
+  .displaymenu-content a:hover{
+    color: #FFFFFF;
+    background-color: #00A4BD;
+    margin-top: 0px;
+
+  }
