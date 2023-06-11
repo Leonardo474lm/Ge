@@ -5,62 +5,52 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos_aboutapp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script></script>
-    <script>
-        var links = document.querySelectorAll('.link');
-        var contents = document.querySelectorAll('.content');
 
-        links.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                var target = this.getAttribute('data-target');
-
-                contents.forEach(function (content) {
-                    if (content.id === target) {
-                        content.style.display = 'block';
-                    } else {
-                        content.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
+    <script defer src="dataT.js" ></script>
     <title>About Us</title>
 </head>
 
 <body>
-  
+    <div>
+      <a href="geko.html">  <Button > Regresar</Button></a>
+    </div>
+    <div class="contenedor">
+        <div id="content1" class="content">
+            <h1>About us</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptatibus quod exercitationem officia
+                ex
+                minima similique odio accusantium tempora voluptas praesentium perspiciatis, in possimus sed repellendus
+                at
+                excepturi enim delectus!</p>
+        </div>
 
-    <div id="content1" class="content">
-        <h1>About us</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptatibus quod exercitationem officia ex
-            minima similique odio accusantium tempora voluptas praesentium perspiciatis, in possimus sed repellendus at
-            excepturi enim delectus!</p>
-    </div>
-
-    <div id="content2" class="content">
-        <h2>Apuestas Responsables</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, impedit quidem quam voluptate rerum
-            eligendi quaerat porro adipisci excepturi unde reprehenderit autem ex consectetur corporis, iste harum, est
-            officia! Nihil.</p>
-    </div>
-    <div id="content3" class="content">
-        <h1>Nuestras Apuestas</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fuga ratione numquam eligendi porro,
-            molestiae veniam odit! Quia fugiat, voluptas temporibus impedit soluta a asperiores accusamus sit optio
-            officiis perferendis!</p>
-    </div>
-    <div id="content4" class="content">
-        <h1>Politicas de Cookies</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis cumque dolore blanditiis
-            reiciendis? Atque molestias maxime ullam, dicta vero, architecto velit error assumenda veniam at pariatur
-            dolorem, laudantium et?</p>
-    </div>
-    <div id="content5" class="content">
-        <h1>Politicas de privacidad</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa porro, mollitia praesentium amet iste,
-            impedit reiciendis obcaecati cumque ex minima molestiae dolor sit voluptate vel? Debitis sit cupiditate vel.
-        </p>
+        <div id="content2" class="content">
+            <h2>Apuestas Responsables</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, impedit quidem quam voluptate rerum
+                eligendi quaerat porro adipisci excepturi unde reprehenderit autem ex consectetur corporis, iste harum,
+                est
+                officia! Nihil.</p>
+        </div>
+        <div id="content3" class="content">
+            <h1>Nuestras Apuestas</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fuga ratione numquam eligendi porro,
+                molestiae veniam odit! Quia fugiat, voluptas temporibus impedit soluta a asperiores accusamus sit optio
+                officiis perferendis!</p>
+        </div>
+        <div id="content4" class="content">
+            <h1>Politicas de Cookies</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis cumque dolore blanditiis
+                reiciendis? Atque molestias maxime ullam, dicta vero, architecto velit error assumenda veniam at
+                pariatur
+                dolorem, laudantium et?</p>
+        </div>
+        <div id="content5" class="content">
+            <h1>Politicas de privacidad</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa porro, mollitia praesentium amet iste,
+                impedit reiciendis obcaecati cumque ex minima molestiae dolor sit voluptate vel? Debitis sit cupiditate
+                vel.
+            </p>
+        </div>
     </div>
 </body>
 

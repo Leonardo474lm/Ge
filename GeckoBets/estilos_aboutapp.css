@@ -1,8 +1,30 @@
-body{
+body {
+    background-color: black;
     background-image: url('images/mesi.webp');
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 .content {
-    display: none;
-  }
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contenedor {
+    place-items: center;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

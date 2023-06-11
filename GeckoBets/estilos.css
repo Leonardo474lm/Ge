@@ -7,7 +7,8 @@ body {
 }
 
 .Anuncio1 {
-    background-color: rgb(110, 109, 109);
+    background-color: rgba(255, 255, 255, 0.05);
+
     width: 10%;
     height: 700px;
     float: left;
@@ -16,7 +17,8 @@ body {
 }
 
 .Anuncio2 {
-    background-color: rgb(110, 109, 109);
+    background-color: rgba(0, 0, 0, 0.5);
+
     width: 10%;
     height: 700px;
     float: right;
@@ -48,17 +50,17 @@ body {
 }
 
 .nav .title {
-text-align: center;
+    text-align: center;
     width: 60%;
     height: 90px;
     float: left;
     font-size: 30px;
-    color: beige;
+    color: rgb(207, 207, 18);
     font-weight: bold;
 
 }
 
-.nav .tooltop{
+.nav .tooltop {
 
     width: 19%;
     height: 100px;
@@ -67,20 +69,22 @@ text-align: center;
 
 }
 
-.nav .tooltop div{
+.nav .tooltop div {
 
-   margin-right: 0px;
-float: left;
-    
+    margin-right: 0px;
+    float: left;
+
     /*background-color: #139853;*/
 }
+
 .nav .tooltop .displaymenu {
 
     margin-right: 0px;
-     float: right;
-     
-     /* background-color: #9bb1a6; */
- }
+    float: right;
+
+    /* background-color: #9bb1a6; */
+}
+
 .nav .tooltop button {
     float: right;
     text-align: center;
@@ -111,7 +115,7 @@ float: left;
     height: 100px;
     float: left;
     text-align: center;
-  
+
 }
 
 .nav .toolboot li {
@@ -120,7 +124,7 @@ float: left;
     float: left;
     margin-top: 50px;
     list-style: none;
-    color: bisque;
+    color: rgb(0, 0, 0);
 }
 
 .nav .toolboot li:hover {
@@ -132,7 +136,7 @@ float: left;
 /*ESta parte es para la eleccion de los partidos */
 
 .eleccion {
-    background-color: #3c4c44;
+
     border-radius: 10px;
     text-decoration: none;
     width: 30%;
@@ -140,26 +144,36 @@ float: left;
     float: left;
     margin-top: 10px;
     margin-left: 1%;
+    background-image: url('images/estadio.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .eleccion .tit {
     background-color: rgb(197, 240, 9);
     border-radius: 10px;
     width: 90%;
-    height: 100px;
+    height: 50px;
     float: left;
     margin-top: 10px;
     margin-left: 5%;
     text-align: center;
-    font-size: 26px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
+.eleccion img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
 .eleccion .part {
-    background-color: rgb(68, 182, 119);
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
     width: 90%;
-    height: 370px;
+    height: 200px;
     float: left;
     margin-top: 10px;
     margin-left: 5%;
@@ -170,23 +184,29 @@ float: left;
 
 }
 
+
 .eleccion .part p {
     margin-left: 10%;
 }
 
 .eleccion .part .botonpopular {
-    background-color: rgb(54, 147, 181);
+    background-color: rgb(54, 147, 181, 0.5);
     float: left;
     text-align: left;
     margin-left: 10%;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(86, 9, 9);
+    color: rgb(22, 15, 15);
     width: 80%;
     border-radius: 50px;
 }
 
+.eleccion .part :hover {
+color: #64ca20;
+    background-color: rgba(53, 63, 194, 0.5);
+    
+}
 
 
 
@@ -200,6 +220,9 @@ float: left;
     float: left;
     margin-top: 10px;
     margin-left: 1%;
+    background-image: url('images/estadio.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .partidos .envivo {
@@ -237,7 +260,7 @@ float: left;
 }
 
 .partidos .lista {
-   
+
     width: 90%;
     margin-left: 5%;
     height: 420px;
@@ -248,7 +271,7 @@ float: left;
 }
 
 .partidos .lista .juego {
-    background-color: rgb(146, 130, 113);
+    background-color: rgb(146, 130, 113,0.5);
     top: 0;
     left: 0;
     width: 90%;
@@ -277,6 +300,7 @@ float: left;
     background-color: #21f197;
 
 }
+
 .partidos .lista .juego .sect button:hover {
     background: #134d83;
     font-size: 15px;
@@ -285,73 +309,94 @@ float: left;
     font-size: medium;
     /* Safari */
     transition-duration: 0.4s;
-    
+
 
 }
-.footer{
+/*Esta parte es para el footer*/
+
+.footer {
 
     float: left;
     width: 100%;
     height: 300px;
-    background-color: #050607;
+    background-color: #000000;
 }
-.partes{
-width: 24%;
-height: 280px;
-margin-top: 10px;
-margin-left: 10px;
-background-color: #5f4d4d;
-float: left;
-text-align: center;
-list-style: none;
+
+.partes {
+    width: 24%;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgba(35, 209, 142, 0.5);
+    float: left;
+    text-align: center;
+    list-style: none;
+    color: #00A4BD;
 
 
 }
-.partes a{
+
+.partes a {
     text-decoration: none;
-    color: beige;
+    color: rgb(235, 235, 235);
 
 }
-.partes img{
-background-color: transparent;
+.partes a:hover {
+    text-decoration: none;
+    color: rgb(68, 56, 56);
+
+}
+.partes img {
+    background-color: transparent;
     width: 90px;
 }
-.nav{
+.partes img :hover{
+    background-color: #e8e40f;
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.nav {
     background-image: url('images/estadio.webp');
     background-size: cover;
     background-position: center;
 }
+
 /* agregado recientement"*/
 
-  /* esta parte es de el menu despelglable*/
-  .displaymenu{
-    
-    
+/* esta parte es de el menu despelglable*/
+.displaymenu {
+
+
     float: right;
 
-  }
-  .displaymenu-content{
+}
+
+.displaymenu-content {
     display: none;
     position: absolute;
     width: 6%;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px  rgba(0,0,0,2);
-   
-  }
-  .displaymenu:hover .displaymenu-content{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+
+}
+
+.displaymenu:hover .displaymenu-content {
     display: block;
     margin-top: 40px;
-  }
-  .displaymenu-content a{
+}
+
+.displaymenu-content a {
     display: block;
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
     margin-top: 0px;
-  }
-  .displaymenu-content a:hover{
+}
+
+.displaymenu-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
     margin-top: 0px;
 
-  }
+}
